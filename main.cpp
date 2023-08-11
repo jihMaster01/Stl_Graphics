@@ -1,6 +1,6 @@
 #include "Window.h"
 
-int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR pCmdLine/*PWSTR = wide character(2Byte)*/, int nCmdShow)
+int WINAPI WinMain(_In_ HINSTANCE hInstance,_In_opt_ HINSTANCE hPrevInstance,_In_ LPSTR pCmdLine/*PWSTR = wide character(2Byte)*/,_In_ int nCmdShow)
 {
 	if (Window::InitializeWindow(hInstance, 1280, 800, L"그래픽스 엔진") == false)
 	{
